@@ -3,68 +3,68 @@
 # -------------------
 
 # Dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+/client/node_modules
+/client/.pnp
+/client.pnp.*
+/client.yarn/*
+!/client.yarn/patches
+!/client.yarn/plugins
+!/client.yarn/releases
+!/client.yarn/versions
 
 # Testing
-/coverage
+/client/coverage
 
 # Next.js build output
-/.next/
-/out/
+/client/.next/
+/client/out/
 
 # Production build
-/build
+/client/build
 
 # Vercel deployment
-.vercel
+/client/.vercel
 
 # TypeScript
-*.tsbuildinfo
-next-env.d.ts
+/client/*.tsbuildinfo
+/client/next-env.d.ts
 
 # Misc
-.DS_Store
-*.pem
+/client/.DS_Store
+/client/*.pem
 
 # Debug logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
+/client/.pnpm-debug.log*
 
 # Environment files
-.env*
+/client/.env*
 
 # -------------------
 # FLASK (Backend)
 # -------------------
 
 # Virtual Environment
-venv/
-__pycache__/
-*.pyc
-*.pyo
+/server/venv/
+/server/__pycache__/
+/server/*.pyc
+/server/*.pyo
 
 # Flask app logs
-instance/
-*.log
+/server/instance/
+/server/*.log
 
 # Ignore compiled Python files
-*.py[cod]
+/server/*.py[cod]
 
 # Local development databases
-*.sqlite3
+/server/*.sqlite3
 
 # AWS credentials (Ensure you use environment variables instead)
-/.aws/
+server/.aws/
 
 # Misc
-.DS_Store
-Thumbs.db
+/server/.DS_Store
+/server/Thumbs.db
